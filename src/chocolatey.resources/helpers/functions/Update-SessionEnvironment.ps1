@@ -46,7 +46,9 @@ None
 .OUTPUTS
 None
 #>
-
+  [CmdletBinding()]
+  param()
+  
   Write-FunctionCallLogMessage -Invocation $MyInvocation -Parameters $PSBoundParameters
 
   $refreshEnv = $false
